@@ -2,7 +2,7 @@
 //  TagColorCollecrtionViewCell.swift
 //  GetContact
 //
-//  Created by Belyankov Arthurs on 3/7/19.
+//  Created by Belyankov Arthur on 3/7/19.
 //  Copyright © 2019 KBTU. All rights reserved.
 //
 
