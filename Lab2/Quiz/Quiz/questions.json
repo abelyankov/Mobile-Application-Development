@@ -1,0 +1,30 @@
+{
+	"questions": [
+		{
+			"id": "1",
+			"text": "The winner of UEFA legue champions in 2019",
+			"variants" : ["Barcelona", "Bayen Munich", "Real Madrid", "Mancherter City"],
+			"answer": 0,
+			"bonus": 5,
+			"imageUrl": "https://www.dw.com/image/16392542_303.jpg"
+		},
+		
+		{
+			"id": "2",
+			"text": "What is currency of Kazakhstan",
+			"variants" : ["Dirham", "Rubles", "Sum", "Tenge"],
+			"answer": 3,
+			"bonus": 5,
+			"imageUrl": "https://www.dw.com/image/16392542_303.jpg"
+		},
+        {
+            "id": "3",
+            "text": "What is the capital of Kazakhstan",
+            "variants" : ["Astana", "Almaty", "Shymkent", "Akmola"],
+            "answer": 0,
+            "bonus": 5,
+            "imageUrl": "https://www.dw.com/image/16392542_303.jpg"
+        }
+
+	]
+}
