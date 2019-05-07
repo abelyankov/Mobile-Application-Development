@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BCE733E2281E573009D6C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE733D2281E573009D6C86 /* AppDelegate.swift */; };
+		8BCE73402281E573009D6C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE733F2281E573009D6C86 /* ViewController.swift */; };
+		8BCE73432281E573009D6C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE73412281E573009D6C86 /* Main.storyboard */; };
+		8BCE73452281E576009D6C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE73442281E576009D6C86 /* Assets.xcassets */; };
+		8BCE73482281E576009D6C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE73462281E576009D6C86 /* LaunchScreen.storyboard */; };
+		8BCE73532281E576009D6C86 /* ProjectForFullkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73522281E576009D6C86 /* ProjectForFullkaTests.swift */; };
+		8BCE735E2281E576009D6C86 /* ProjectForFullkaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE735D2281E576009D6C86 /* ProjectForFullkaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BCE734F2281E576009D6C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BCE73322281E573009D6C86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BCE73392281E573009D6C86;
+			remoteInfo = ProjectForFullka;
+		};
+		8BCE735A2281E576009D6C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BCE73322281E573009D6C86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BCE73392281E573009D6C86;
+			remoteInfo = ProjectForFullka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BCE733A2281E573009D6C86 /* ProjectForFullka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectForFullka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCE733D2281E573009D6C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BCE733F2281E573009D6C86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BCE73422281E573009D6C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BCE73442281E576009D6C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BCE73472281E576009D6C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BCE73492281E576009D6C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCE734E2281E576009D6C86 /* ProjectForFullkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectForFullkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCE73522281E576009D6C86 /* ProjectForFullkaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectForFullkaTests.swift; sourceTree = "<group>"; };
+		8BCE73542281E576009D6C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCE73592281E576009D6C86 /* ProjectForFullkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectForFullkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCE735D2281E576009D6C86 /* ProjectForFullkaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectForFullkaUITests.swift; sourceTree = "<group>"; };
+		8BCE735F2281E576009D6C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BCE73372281E573009D6C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE734B2281E576009D6C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE73562281E576009D6C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BCE73312281E573009D6C86 = {
+			isa = PBXGroup;
+			children = (
+				8BCE733C2281E573009D6C86 /* ProjectForFullka */,
+				8BCE73512281E576009D6C86 /* ProjectForFullkaTests */,
+				8BCE735C2281E576009D6C86 /* ProjectForFullkaUITests */,
+				8BCE733B2281E573009D6C86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BCE733B2281E573009D6C86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BCE733A2281E573009D6C86 /* ProjectForFullka.app */,
+				8BCE734E2281E576009D6C86 /* ProjectForFullkaTests.xctest */,
+				8BCE73592281E576009D6C86 /* ProjectForFullkaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BCE733C2281E573009D6C86 /* ProjectForFullka */ = {
+			isa = PBXGroup;
+			children = (
+				8BCE733D2281E573009D6C86 /* AppDelegate.swift */,
+				8BCE733F2281E573009D6C86 /* ViewController.swift */,
+				8BCE73412281E573009D6C86 /* Main.storyboard */,
+				8BCE73442281E576009D6C86 /* Assets.xcassets */,
+				8BCE73462281E576009D6C86 /* LaunchScreen.storyboard */,
+				8BCE73492281E576009D6C86 /* Info.plist */,
+			);
+			path = ProjectForFullka;
+			sourceTree = "<group>";
+		};
+		8BCE73512281E576009D6C86 /* ProjectForFullkaTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BCE73522281E576009D6C86 /* ProjectForFullkaTests.swift */,
+				8BCE73542281E576009D6C86 /* Info.plist */,
+			);
+			path = ProjectForFullkaTests;
+			sourceTree = "<group>";
+		};
+		8BCE735C2281E576009D6C86 /* ProjectForFullkaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BCE735D2281E576009D6C86 /* ProjectForFullkaUITests.swift */,
+				8BCE735F2281E576009D6C86 /* Info.plist */,
+			);
+			path = ProjectForFullkaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BCE73392281E573009D6C86 /* ProjectForFullka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BCE73622281E576009D6C86 /* Build configuration list for PBXNativeTarget "ProjectForFullka" */;
+			buildPhases = (
+				8BCE73362281E573009D6C86 /* Sources */,
+				8BCE73372281E573009D6C86 /* Frameworks */,
+				8BCE73382281E573009D6C86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProjectForFullka;
+			productName = ProjectForFullka;
+			productReference = 8BCE733A2281E573009D6C86 /* ProjectForFullka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BCE734D2281E576009D6C86 /* ProjectForFullkaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BCE73652281E576009D6C86 /* Build configuration list for PBXNativeTarget "ProjectForFullkaTests" */;
+			buildPhases = (
+				8BCE734A2281E576009D6C86 /* Sources */,
+				8BCE734B2281E576009D6C86 /* Frameworks */,
+				8BCE734C2281E576009D6C86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BCE73502281E576009D6C86 /* PBXTargetDependency */,
+			);
+			name = ProjectForFullkaTests;
+			productName = ProjectForFullkaTests;
+			productReference = 8BCE734E2281E576009D6C86 /* ProjectForFullkaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BCE73582281E576009D6C86 /* ProjectForFullkaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BCE73682281E576009D6C86 /* Build configuration list for PBXNativeTarget "ProjectForFullkaUITests" */;
+			buildPhases = (
+				8BCE73552281E576009D6C86 /* Sources */,
+				8BCE73562281E576009D6C86 /* Frameworks */,
+				8BCE73572281E576009D6C86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BCE735B2281E576009D6C86 /* PBXTargetDependency */,
+			);
+			name = ProjectForFullkaUITests;
+			productName = ProjectForFullkaUITests;
+			productReference = 8BCE73592281E576009D6C86 /* ProjectForFullkaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BCE73322281E573009D6C86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Arthur Belyankov";
+				TargetAttributes = {
+					8BCE73392281E573009D6C86 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					8BCE734D2281E576009D6C86 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8BCE73392281E573009D6C86;
+					};
+					8BCE73582281E576009D6C86 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8BCE73392281E573009D6C86;
+					};
+				};
+			};
+			buildConfigurationList = 8BCE73352281E573009D6C86 /* Build configuration list for PBXProject "ProjectForFullka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BCE73312281E573009D6C86;
+			productRefGroup = 8BCE733B2281E573009D6C86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BCE73392281E573009D6C86 /* ProjectForFullka */,
+				8BCE734D2281E576009D6C86 /* ProjectForFullkaTests */,
+				8BCE73582281E576009D6C86 /* ProjectForFullkaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BCE73382281E573009D6C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCE73482281E576009D6C86 /* LaunchScreen.storyboard in Resources */,
+				8BCE73452281E576009D6C86 /* Assets.xcassets in Resources */,
+				8BCE73432281E573009D6C86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE734C2281E576009D6C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE73572281E576009D6C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BCE73362281E573009D6C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCE73402281E573009D6C86 /* ViewController.swift in Sources */,
+				8BCE733E2281E573009D6C86 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE734A2281E576009D6C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCE73532281E576009D6C86 /* ProjectForFullkaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE73552281E576009D6C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCE735E2281E576009D6C86 /* ProjectForFullkaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BCE73502281E576009D6C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BCE73392281E573009D6C86 /* ProjectForFullka */;
+			targetProxy = 8BCE734F2281E576009D6C86 /* PBXContainerItemProxy */;
+		};
+		8BCE735B2281E576009D6C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BCE73392281E573009D6C86 /* ProjectForFullka */;
+			targetProxy = 8BCE735A2281E576009D6C86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BCE73412281E573009D6C86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BCE73422281E573009D6C86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BCE73462281E576009D6C86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BCE73472281E576009D6C86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BCE73602281E576009D6C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BCE73612281E576009D6C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BCE73632281E576009D6C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LR2C7293VN;
+				INFOPLIST_FILE = ProjectForFullka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.ProjectForFullka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BCE73642281E576009D6C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LR2C7293VN;
+				INFOPLIST_FILE = ProjectForFullka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.ProjectForFullka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8BCE73662281E576009D6C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjectForFullkaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.ProjectForFullkaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectForFullka.app/ProjectForFullka";
+			};
+			name = Debug;
+		};
+		8BCE73672281E576009D6C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjectForFullkaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.ProjectForFullkaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectForFullka.app/ProjectForFullka";
+			};
+			name = Release;
+		};
+		8BCE73692281E576009D6C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjectForFullkaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.ProjectForFullkaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProjectForFullka;
+			};
+			name = Debug;
+		};
+		8BCE736A2281E576009D6C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjectForFullkaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.ProjectForFullkaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProjectForFullka;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BCE73352281E573009D6C86 /* Build configuration list for PBXProject "ProjectForFullka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCE73602281E576009D6C86 /* Debug */,
+				8BCE73612281E576009D6C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCE73622281E576009D6C86 /* Build configuration list for PBXNativeTarget "ProjectForFullka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCE73632281E576009D6C86 /* Debug */,
+				8BCE73642281E576009D6C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCE73652281E576009D6C86 /* Build configuration list for PBXNativeTarget "ProjectForFullkaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCE73662281E576009D6C86 /* Debug */,
+				8BCE73672281E576009D6C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCE73682281E576009D6C86 /* Build configuration list for PBXNativeTarget "ProjectForFullkaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCE73692281E576009D6C86 /* Debug */,
+				8BCE736A2281E576009D6C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BCE73322281E573009D6C86 /* Project object */;
+}
