@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BCE73782282B29E009D6C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73772282B29E009D6C86 /* AppDelegate.swift */; };
+		8BCE737A2282B29E009D6C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73792282B29E009D6C86 /* ViewController.swift */; };
+		8BCE737D2282B29E009D6C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE737B2282B29E009D6C86 /* Main.storyboard */; };
+		8BCE737F2282B2A2009D6C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE737E2282B2A2009D6C86 /* Assets.xcassets */; };
+		8BCE73822282B2A2009D6C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE73802282B2A2009D6C86 /* LaunchScreen.storyboard */; };
+		8BCE738D2282B2A3009D6C86 /* FindSpyGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE738C2282B2A3009D6C86 /* FindSpyGameTests.swift */; };
+		8BCE73982282B2A3009D6C86 /* FindSpyGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73972282B2A3009D6C86 /* FindSpyGameUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BCE73892282B2A3009D6C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BCE736C2282B29E009D6C86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BCE73732282B29E009D6C86;
+			remoteInfo = FindSpyGame;
+		};
+		8BCE73942282B2A3009D6C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BCE736C2282B29E009D6C86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BCE73732282B29E009D6C86;
+			remoteInfo = FindSpyGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BCE73742282B29E009D6C86 /* FindSpyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindSpyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCE73772282B29E009D6C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BCE73792282B29E009D6C86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BCE737C2282B29E009D6C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BCE737E2282B2A2009D6C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BCE73812282B2A2009D6C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BCE73832282B2A2009D6C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCE73882282B2A3009D6C86 /* FindSpyGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindSpyGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCE738C2282B2A3009D6C86 /* FindSpyGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSpyGameTests.swift; sourceTree = "<group>"; };
+		8BCE738E2282B2A3009D6C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCE73932282B2A3009D6C86 /* FindSpyGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindSpyGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCE73972282B2A3009D6C86 /* FindSpyGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSpyGameUITests.swift; sourceTree = "<group>"; };
+		8BCE73992282B2A3009D6C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BCE73712282B29E009D6C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE73852282B2A3009D6C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE73902282B2A3009D6C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BCE736B2282B29E009D6C86 = {
+			isa = PBXGroup;
+			children = (
+				8BCE73762282B29E009D6C86 /* FindSpyGame */,
+				8BCE738B2282B2A3009D6C86 /* FindSpyGameTests */,
+				8BCE73962282B2A3009D6C86 /* FindSpyGameUITests */,
+				8BCE73752282B29E009D6C86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BCE73752282B29E009D6C86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BCE73742282B29E009D6C86 /* FindSpyGame.app */,
+				8BCE73882282B2A3009D6C86 /* FindSpyGameTests.xctest */,
+				8BCE73932282B2A3009D6C86 /* FindSpyGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BCE73762282B29E009D6C86 /* FindSpyGame */ = {
+			isa = PBXGroup;
+			children = (
+				8BCE73772282B29E009D6C86 /* AppDelegate.swift */,
+				8BCE73792282B29E009D6C86 /* ViewController.swift */,
+				8BCE737B2282B29E009D6C86 /* Main.storyboard */,
+				8BCE737E2282B2A2009D6C86 /* Assets.xcassets */,
+				8BCE73802282B2A2009D6C86 /* LaunchScreen.storyboard */,
+				8BCE73832282B2A2009D6C86 /* Info.plist */,
+			);
+			path = FindSpyGame;
+			sourceTree = "<group>";
+		};
+		8BCE738B2282B2A3009D6C86 /* FindSpyGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BCE738C2282B2A3009D6C86 /* FindSpyGameTests.swift */,
+				8BCE738E2282B2A3009D6C86 /* Info.plist */,
+			);
+			path = FindSpyGameTests;
+			sourceTree = "<group>";
+		};
+		8BCE73962282B2A3009D6C86 /* FindSpyGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BCE73972282B2A3009D6C86 /* FindSpyGameUITests.swift */,
+				8BCE73992282B2A3009D6C86 /* Info.plist */,
+			);
+			path = FindSpyGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BCE73732282B29E009D6C86 /* FindSpyGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BCE739C2282B2A3009D6C86 /* Build configuration list for PBXNativeTarget "FindSpyGame" */;
+			buildPhases = (
+				8BCE73702282B29E009D6C86 /* Sources */,
+				8BCE73712282B29E009D6C86 /* Frameworks */,
+				8BCE73722282B29E009D6C86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindSpyGame;
+			productName = FindSpyGame;
+			productReference = 8BCE73742282B29E009D6C86 /* FindSpyGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BCE73872282B2A3009D6C86 /* FindSpyGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BCE739F2282B2A3009D6C86 /* Build configuration list for PBXNativeTarget "FindSpyGameTests" */;
+			buildPhases = (
+				8BCE73842282B2A3009D6C86 /* Sources */,
+				8BCE73852282B2A3009D6C86 /* Frameworks */,
+				8BCE73862282B2A3009D6C86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BCE738A2282B2A3009D6C86 /* PBXTargetDependency */,
+			);
+			name = FindSpyGameTests;
+			productName = FindSpyGameTests;
+			productReference = 8BCE73882282B2A3009D6C86 /* FindSpyGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BCE73922282B2A3009D6C86 /* FindSpyGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BCE73A22282B2A3009D6C86 /* Build configuration list for PBXNativeTarget "FindSpyGameUITests" */;
+			buildPhases = (
+				8BCE738F2282B2A3009D6C86 /* Sources */,
+				8BCE73902282B2A3009D6C86 /* Frameworks */,
+				8BCE73912282B2A3009D6C86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BCE73952282B2A3009D6C86 /* PBXTargetDependency */,
+			);
+			name = FindSpyGameUITests;
+			productName = FindSpyGameUITests;
+			productReference = 8BCE73932282B2A3009D6C86 /* FindSpyGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BCE736C2282B29E009D6C86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Arthur Belyankov";
+				TargetAttributes = {
+					8BCE73732282B29E009D6C86 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					8BCE73872282B2A3009D6C86 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8BCE73732282B29E009D6C86;
+					};
+					8BCE73922282B2A3009D6C86 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8BCE73732282B29E009D6C86;
+					};
+				};
+			};
+			buildConfigurationList = 8BCE736F2282B29E009D6C86 /* Build configuration list for PBXProject "FindSpyGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BCE736B2282B29E009D6C86;
+			productRefGroup = 8BCE73752282B29E009D6C86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BCE73732282B29E009D6C86 /* FindSpyGame */,
+				8BCE73872282B2A3009D6C86 /* FindSpyGameTests */,
+				8BCE73922282B2A3009D6C86 /* FindSpyGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BCE73722282B29E009D6C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCE73822282B2A2009D6C86 /* LaunchScreen.storyboard in Resources */,
+				8BCE737F2282B2A2009D6C86 /* Assets.xcassets in Resources */,
+				8BCE737D2282B29E009D6C86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE73862282B2A3009D6C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE73912282B2A3009D6C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BCE73702282B29E009D6C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCE737A2282B29E009D6C86 /* ViewController.swift in Sources */,
+				8BCE73782282B29E009D6C86 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE73842282B2A3009D6C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCE738D2282B2A3009D6C86 /* FindSpyGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCE738F2282B2A3009D6C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCE73982282B2A3009D6C86 /* FindSpyGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BCE738A2282B2A3009D6C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BCE73732282B29E009D6C86 /* FindSpyGame */;
+			targetProxy = 8BCE73892282B2A3009D6C86 /* PBXContainerItemProxy */;
+		};
+		8BCE73952282B2A3009D6C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BCE73732282B29E009D6C86 /* FindSpyGame */;
+			targetProxy = 8BCE73942282B2A3009D6C86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BCE737B2282B29E009D6C86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BCE737C2282B29E009D6C86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BCE73802282B2A2009D6C86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BCE73812282B2A2009D6C86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BCE739A2282B2A3009D6C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BCE739B2282B2A3009D6C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BCE739D2282B2A3009D6C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LR2C7293VN;
+				INFOPLIST_FILE = FindSpyGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.FindSpyGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BCE739E2282B2A3009D6C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LR2C7293VN;
+				INFOPLIST_FILE = FindSpyGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.FindSpyGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8BCE73A02282B2A3009D6C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LR2C7293VN;
+				INFOPLIST_FILE = FindSpyGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.FindSpyGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindSpyGame.app/FindSpyGame";
+			};
+			name = Debug;
+		};
+		8BCE73A12282B2A3009D6C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LR2C7293VN;
+				INFOPLIST_FILE = FindSpyGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.FindSpyGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindSpyGame.app/FindSpyGame";
+			};
+			name = Release;
+		};
+		8BCE73A32282B2A3009D6C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LR2C7293VN;
+				INFOPLIST_FILE = FindSpyGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.FindSpyGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindSpyGame;
+			};
+			name = Debug;
+		};
+		8BCE73A42282B2A3009D6C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LR2C7293VN;
+				INFOPLIST_FILE = FindSpyGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.FindSpyGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindSpyGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BCE736F2282B29E009D6C86 /* Build configuration list for PBXProject "FindSpyGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCE739A2282B2A3009D6C86 /* Debug */,
+				8BCE739B2282B2A3009D6C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCE739C2282B2A3009D6C86 /* Build configuration list for PBXNativeTarget "FindSpyGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCE739D2282B2A3009D6C86 /* Debug */,
+				8BCE739E2282B2A3009D6C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCE739F2282B2A3009D6C86 /* Build configuration list for PBXNativeTarget "FindSpyGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCE73A02282B2A3009D6C86 /* Debug */,
+				8BCE73A12282B2A3009D6C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCE73A22282B2A3009D6C86 /* Build configuration list for PBXNativeTarget "FindSpyGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BCE73A32282B2A3009D6C86 /* Debug */,
+				8BCE73A42282B2A3009D6C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BCE736C2282B29E009D6C86 /* Project object */;
+}
