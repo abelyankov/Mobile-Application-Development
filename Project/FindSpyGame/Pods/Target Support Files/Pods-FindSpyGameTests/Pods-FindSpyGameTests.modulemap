@@ -1,0 +1,6 @@
+framework module Pods_FindSpyGameTests {
+  umbrella header "Pods-FindSpyGameTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
