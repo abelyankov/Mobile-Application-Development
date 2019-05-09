@@ -20,6 +20,7 @@
 		8BCE73A92282D8FB009D6C86 /* GameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73A82282D8FB009D6C86 /* GameGenerator.swift */; };
 		8BCE73AB2282D9A0009D6C86 /* LocationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73AA2282D9A0009D6C86 /* LocationGenerator.swift */; };
 		8BCE73AE2282ED4B009D6C86 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73AD2282ED4B009D6C86 /* LocationViewController.swift */; };
+		8BCE73B022831DF3009D6C86 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73AF22831DF3009D6C86 /* TimerViewController.swift */; };
 		A58AF1D70A1EA924915745F6 /* Pods_FindSpyGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316667DBCF78B6CDF1B95F9E /* Pods_FindSpyGame.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		8BCE73A82282D8FB009D6C86 /* GameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameGenerator.swift; sourceTree = "<group>"; };
 		8BCE73AA2282D9A0009D6C86 /* LocationGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationGenerator.swift; sourceTree = "<group>"; };
 		8BCE73AD2282ED4B009D6C86 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		8BCE73AF22831DF3009D6C86 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		99BEC65500A232407F9F5874 /* Pods-FindSpyGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindSpyGameUITests.release.xcconfig"; path = "Target Support Files/Pods-FindSpyGameUITests/Pods-FindSpyGameUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DAD124266656336870935482 /* Pods_FindSpyGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindSpyGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -189,6 +191,7 @@
 			children = (
 				8BCE73792282B29E009D6C86 /* ViewController.swift */,
 				8BCE73AD2282ED4B009D6C86 /* LocationViewController.swift */,
+				8BCE73AF22831DF3009D6C86 /* TimerViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				8BCE737A2282B29E009D6C86 /* ViewController.swift in Sources */,
 				8BCE73A72282D83F009D6C86 /* Game.swift in Sources */,
 				8BCE73AB2282D9A0009D6C86 /* LocationGenerator.swift in Sources */,
+				8BCE73B022831DF3009D6C86 /* TimerViewController.swift in Sources */,
 				8BCE73AE2282ED4B009D6C86 /* LocationViewController.swift in Sources */,
 				8BCE73782282B29E009D6C86 /* AppDelegate.swift in Sources */,
 				8BCE73A92282D8FB009D6C86 /* GameGenerator.swift in Sources */,

@@ -14,19 +14,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberOfPlayersTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("asdasda")
         startBtn.addTarget(self, action: #selector(didTapStartBtn), for: .touchUpInside)
     }
     
     @objc func didTapStartBtn(_ sender: UIButton){
-        print("asdasdsdfsdfsdfsdfsdfa")
         if(numberOfPlayersTextField.text != ""){
-                print("asdasda")
-                print(GameGenerator.generateGame(Int(numberOfPlayersTextField.text!) ?? 0))
+            let locationViewController =
+                storyboard?.instantiateViewController(withIdentifier: "LocationViewController") as! LocationViewController
+            
+            locationViewController.game = GameGenerator.generateGame(Int(numberOfPlayersTextField.text!) ?? 0)
+            self.present(locationViewController, animated: true, completion: nil)
         }
     }
-
-
 }
 

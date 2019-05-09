@@ -13,7 +13,7 @@ class GameGenerator{
         let locations = LocationGenerator.getLocations()
         let location = locations[Int.random(in: 0..<locations.count)]
         let spyNumber = Int.random(in: 1..<numberOfPlayers)
-        return Game(location, spyNumber)
+        return Game(location, spyNumber, numberOfPlayers)
     }
 }
 

@@ -11,9 +11,11 @@ import Foundation
 struct Game {
     var location: String
     var spyNumber: Int
+    var totalNumberOfPlayers: Int
     
-    init(_ location: String, _ spyNumber: Int) {
+    init(_ location: String, _ spyNumber: Int, _ totalNumberOfPlayers: Int) {
         self.location = location
         self.spyNumber = spyNumber
+        self.totalNumberOfPlayers = totalNumberOfPlayers
     }
 }
