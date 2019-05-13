@@ -13,6 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FindSpyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -48,13 +49,13 @@
                         <outlet property="startBtn" destination="blK-Wv-0ci" id="hoF-uk-8gL"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="965" y="130"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="oKl-mb-vsq">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dso-Gu-Oi6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="LocationViewController" id="kYH-sc-Kd9" customClass="LocationViewController" customModule="FindSpyGame" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aEb-7M-qRw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -112,13 +113,13 @@
                         <outlet property="showLocationBtn" destination="Fb9-lS-qKC" id="cKL-hs-ZTr"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dso-Gu-Oi6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1664" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fcu-RU-ehh">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SBK-nN-URD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B1X-Fz-dhw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1pY-B4-7P6">
@@ -130,13 +131,13 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ikt-N5-kku"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SBK-nN-URD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="8NP-RY-vGP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1A-fc-uBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="TimerViewController" id="Mum-lp-r5l" customClass="TimerViewController" customModule="FindSpyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AZs-zZ-Fcz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -187,7 +188,6 @@
                         <outlet property="timerLabel" destination="mmg-RV-uSf" id="AZF-kG-gAx"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O1A-fc-uBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2415.9420289855075" y="129.91071428571428"/>
         </scene>

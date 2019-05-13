@@ -9,19 +9,73 @@
 import UIKit
 
 class TimerViewController: UIViewController {
-
-    @IBOutlet weak var fisishBtn: UIButton!
-    @IBOutlet weak var finisgBtn: UIButton!
+    
+    let infoLabel: UILabel = {
+        let lbl = UILabel()
+        lbl.text = "У вас есть 5 минут, чтобы найти шпиона"
+        lbl.numberOfLines = 0
+        lbl.font = UIFont(name: "Helvetica", size: 20)
+        lbl.textColor = UIColor.white
+        lbl.font = lbl.font.withSize(25)
+        return lbl
+    }()
+    
+    let timerLabel: UILabel = {
+        let lbl = UILabel()
+        lbl.numberOfLines = 0
+        lbl.font = UIFont(name: "Helvetica", size: 20)
+        lbl.textColor = UIColor.white
+        lbl.font = lbl.font.withSize(50)
+        return lbl
+    }()
+    
+    let finishButton: UIButton = {
+        let btn = UIButton()
+        btn.backgroundColor = UIColor.white
+        btn.layer.cornerRadius = 20
+        btn.setTitle("Закончить игру", for:  .normal)
+        btn.setTitleColor(UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0), for: .normal)
+        return btn
+    }()
+    
     var game: Game? = nil
     var timer: Timer? = nil
-    var seconds = 360
+    var seconds = 300
     
-    @IBOutlet weak var timerLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0)
+        setupView()
         runTimer()
-        fisishBtn.addTarget(self, action: #selector(didTapFinishBtn), for: .touchUpInside)
+        finishButton.addTarget(self, action: #selector(didTapFinishBtn), for: .touchUpInside)
         
+    }
+    
+    func setupView() {
+        self.view.addSubview(infoLabel)
+        self.view.addSubview(timerLabel)
+        self.view.addSubview(finishButton)
+        
+        infoLabel.snp.makeConstraints {
+            $0.height.equalTo(206)
+            $0.width.equalTo(316)
+            $0.top.equalTo(50)
+            $0.centerX.equalToSuperview()
+        }
+        
+        timerLabel.snp.makeConstraints {
+            $0.height.equalTo(272)
+            $0.width.equalTo(130)
+            $0.top.equalTo(infoLabel.snp.bottom).offset(4)
+            $0.centerX.equalToSuperview()
+        }
+        
+        finishButton.snp.makeConstraints {
+            $0.width.equalTo(272)
+            $0.height.equalTo(51)
+            $0.top.equalTo(timerLabel.snp.bottom).offset(20)
+            $0.centerX.equalToSuperview()
+        }
     }
     
     func runTimer() {
@@ -46,10 +100,9 @@ class TimerViewController: UIViewController {
         timer?.invalidate()
         seconds = 360
         print("aaa")
-        let alert = UIAlertController(title: "Game over", message: "Location is " + game!.location + " Spy number is " + String(game!.spyNumber), preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "Игра окончена🙅‍♂️", message: "Локация была: " + game!.location + " Шпион: " + String(game!.spyNumber), preferredStyle: UIAlertController.Style.alert)
         
-        //        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
-        let okAction = UIAlertAction(title: "Start again", style: UIAlertAction.Style.cancel) {
+        let okAction = UIAlertAction(title: "Ещё раз", style: UIAlertAction.Style.cancel) {
             UIAlertAction in
             self.startMainViewController()
             
@@ -60,8 +113,7 @@ class TimerViewController: UIViewController {
     }
     
     func startMainViewController(){
-        let mainViewController =
-            self.storyboard!.instantiateViewController(withIdentifier: "MainViewController")
-        self.present(mainViewController, animated: true, completion: nil)
+        let startViewController = StartViewController()
+        self.present(startViewController, animated: true, completion: nil)
     }
 }
