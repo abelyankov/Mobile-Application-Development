@@ -64,6 +64,7 @@ class LocationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(game!)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         view.backgroundColor = UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0)
         setupView()
         showLocationButton.addTarget(self,action: #selector(showLocation), for: .touchUpInside)

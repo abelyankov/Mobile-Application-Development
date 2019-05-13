@@ -11,6 +11,8 @@
 		397A52E269E3BD8145B2FD8A /* Pods_FindSpyGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD124266656336870935482 /* Pods_FindSpyGameTests.framework */; };
 		8B21C9E52288C1E30046F639 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B21C9E42288C1E30046F639 /* logo.png */; };
 		8B21C9E72288C4210046F639 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B21C9E62288C4210046F639 /* StartViewController.swift */; };
+		8B21C9EB22890D910046F639 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B21C9EA22890D910046F639 /* LocationService.swift */; };
+		8B21C9ED228911560046F639 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B21C9EC228911560046F639 /* Location.swift */; };
 		8BCE73782282B29E009D6C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73772282B29E009D6C86 /* AppDelegate.swift */; };
 		8BCE737A2282B29E009D6C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73792282B29E009D6C86 /* ViewController.swift */; };
 		8BCE737D2282B29E009D6C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE737B2282B29E009D6C86 /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		7F22EACFEADADC9DB1B1B6CC /* Pods-FindSpyGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindSpyGame.debug.xcconfig"; path = "Target Support Files/Pods-FindSpyGame/Pods-FindSpyGame.debug.xcconfig"; sourceTree = "<group>"; };
 		8B21C9E42288C1E30046F639 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "../../../../Desktop/Mobile Application Development/logo.png"; sourceTree = "<group>"; };
 		8B21C9E62288C4210046F639 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		8B21C9EA22890D910046F639 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		8B21C9EC228911560046F639 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8BCE73742282B29E009D6C86 /* FindSpyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindSpyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCE73772282B29E009D6C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BCE73792282B29E009D6C86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B21C9E922890D670046F639 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				8B21C9EA22890D910046F639 /* LocationService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		8BCE736B2282B29E009D6C86 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +163,7 @@
 		8BCE73762282B29E009D6C86 /* FindSpyGame */ = {
 			isa = PBXGroup;
 			children = (
+				8B21C9E922890D670046F639 /* services */,
 				8BCE73AC2282DD86009D6C86 /* controllers */,
 				8BCE73A52282D821009D6C86 /* models */,
 				8BCE73772282B29E009D6C86 /* AppDelegate.swift */,
@@ -187,6 +200,7 @@
 				8BCE73A62282D83F009D6C86 /* Game.swift */,
 				8BCE73A82282D8FB009D6C86 /* GameGenerator.swift */,
 				8BCE73AA2282D9A0009D6C86 /* LocationGenerator.swift */,
+				8B21C9EC228911560046F639 /* Location.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -435,11 +449,13 @@
 			files = (
 				8BCE737A2282B29E009D6C86 /* ViewController.swift in Sources */,
 				8B21C9E72288C4210046F639 /* StartViewController.swift in Sources */,
+				8B21C9ED228911560046F639 /* Location.swift in Sources */,
 				8BCE73A72282D83F009D6C86 /* Game.swift in Sources */,
 				8BCE73AB2282D9A0009D6C86 /* LocationGenerator.swift in Sources */,
 				8BCE73B022831DF3009D6C86 /* TimerViewController.swift in Sources */,
 				8BCE73AE2282ED4B009D6C86 /* LocationViewController.swift in Sources */,
 				8BCE73782282B29E009D6C86 /* AppDelegate.swift in Sources */,
+				8B21C9EB22890D910046F639 /* LocationService.swift in Sources */,
 				8BCE73A92282D8FB009D6C86 /* GameGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
