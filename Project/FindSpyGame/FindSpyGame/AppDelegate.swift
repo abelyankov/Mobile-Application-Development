@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AccountKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let viewFirst = UINavigationController(rootViewController: ViewController())
-        
+        var viewFirst = UINavigationController(rootViewController: MainViewController())
+        let accessTokenValue = UserDefaults.standard.string(forKey: "accessToken")
+        if accessTokenValue == nil {
+            viewFirst = UINavigationController(rootViewController: MainViewController())
+        }
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = viewFirst
         self.window?.makeKeyAndVisible()

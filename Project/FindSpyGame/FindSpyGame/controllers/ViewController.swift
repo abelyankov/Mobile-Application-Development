@@ -8,15 +8,18 @@
 
 import UIKit
 import SnapKit
+import AccountKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AKFViewControllerDelegate {
     
+     var accountKit: AccountKit!
+
     let hatImageView: UIImageView = {
         let ov = UIImageView()
         ov.image = #imageLiteral(resourceName: "hat-1")
         return ov
     }()
-    
+
     let descriptionLabel: UILabel = {
         let dsc = UILabel()
         dsc.backgroundColor = UIColor.white
@@ -34,29 +37,32 @@ class ViewController: UIViewController {
         dsc.layer.shadowRadius = 7.0
         return dsc
     }()
-    
+
     let startButton: UIButton = {
         let btn = UIButton()
         btn.backgroundColor = UIColor.white
         btn.layer.cornerRadius = 20
-        btn.setTitle("Начать игру", for:  .normal)
+        btn.setTitle("Войти", for:  .normal)
         btn.setTitleColor(UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0), for: .normal)
         return btn
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         view.backgroundColor = UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0)
         setUpView()
-        startButton.addTarget(self, action: #selector(tabStartButton), for: .touchUpInside)
+        startButton.addTarget(self, action: #selector(loginBtnPressed), for: .touchUpInside)
+        if accountKit == nil {
+            self.accountKit = AccountKit(responseType: .accessToken)
+        }
     }
-    
+
     @objc func tabStartButton(_ sender: UIButton) {
         let secondViewController = StartViewController()
         self.present(secondViewController, animated: true, completion: nil)
     }
-    
+
     func setUpView() {
         let nameLabel = UILabel()
         nameLabel.textAlignment = .center
@@ -70,26 +76,26 @@ class ViewController: UIViewController {
         self.view.addSubview(nameLabel)
         self.view.addSubview(descriptionLabel)
         self.view.addSubview(startButton)
-        
+
         hatImageView.snp.makeConstraints {
             $0.height.equalTo(90)
             $0.width.equalTo(148)
             $0.top.equalToSuperview().offset(82)
             $0.centerX.equalToSuperview()
         }
-        
+
         nameLabel.snp.makeConstraints {
             $0.top.equalTo(hatImageView.snp.bottom).offset(2)
             $0.centerX.equalToSuperview()
         }
-        
+
         descriptionLabel.snp.makeConstraints {
             $0.height.equalTo(206)
             $0.width.equalTo(316)
             $0.top.equalTo(nameLabel.snp.bottom).offset(44)
             $0.centerX.equalToSuperview()
         }
-        
+
         startButton.snp.makeConstraints {
             $0.width.equalTo(272)
             $0.height.equalTo(51)
@@ -97,5 +103,45 @@ class ViewController: UIViewController {
             $0.centerX.equalToSuperview()
         }
     }
+    
+    func prepareLoginViewController(_ loginViewController: AKFViewController) {
+        loginViewController.delegate = self
+        loginViewController.defaultCountryCode = "KZ"
+        
+        let theme = Theme.default()
+        theme.statusBarStyle = .lightContent
+        theme.inputTextColor = .white
+        theme.textColor = .white
+        theme.headerBackgroundColor = UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0)
+        theme.backgroundColor = UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0)
+        theme.headerTextColor = .white
+        theme.iconColor = .white
+        theme.inputBorderColor = .white
+        theme.inputBackgroundColor = UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0)
+        theme.buttonBorderColor = .white
+        theme.buttonBackgroundColor = UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0)
+        theme.buttonTextColor = .white
+        theme.titleColor = .white
+        
+        loginViewController.setTheme(theme)
+    }
+    
+    @objc func loginBtnPressed() {
+        print("pressed")
+        let inputState = UUID().uuidString
+        print(inputState)
+        let viewController = accountKit.viewControllerForPhoneLogin(with: nil, state: inputState) as AKFViewController
+        viewController.isSendToFacebookEnabled = true
+        self.prepareLoginViewController(viewController)
+        self.present(viewController as! UIViewController, animated: true, completion: nil)
+    }
+    
+    func viewController(_ viewController: (UIViewController & AKFViewController), didCompleteLoginWith accessToken: AccessToken, state: String) {
+        UserDefaults.standard.set(accessToken.tokenString, forKey: "accessToken")
+        guard let accessTokenValue = UserDefaults.standard.string(forKey: "accessToken") else {return}
+        print(accessTokenValue)
+        print("gooooo to main controller")
+        let vc = MainViewController()
+        self.present(vc, animated: true, completion: nil)
+    }
 }
-
