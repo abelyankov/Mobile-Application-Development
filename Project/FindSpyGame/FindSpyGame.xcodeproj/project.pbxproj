@@ -13,10 +13,12 @@
 		8B21C9EB22890D910046F639 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B21C9EA22890D910046F639 /* LocationService.swift */; };
 		8B21C9ED228911560046F639 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B21C9EC228911560046F639 /* Location.swift */; };
 		8B25CE02229C75450032C57F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B25CE01229C75450032C57F /* MainViewController.swift */; };
+		8B25CE04229C9E300032C57F /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B25CE03229C9E300032C57F /* GameTableViewCell.swift */; };
+		8B25CE08229CF8240032C57F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B25CE07229CF8240032C57F /* GoogleService-Info.plist */; };
+		8B25CE0A229D36650032C57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B25CE09229D36650032C57F /* Assets.xcassets */; };
 		8BCE73782282B29E009D6C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73772282B29E009D6C86 /* AppDelegate.swift */; };
 		8BCE737A2282B29E009D6C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73792282B29E009D6C86 /* ViewController.swift */; };
 		8BCE737D2282B29E009D6C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE737B2282B29E009D6C86 /* Main.storyboard */; };
-		8BCE737F2282B2A2009D6C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE737E2282B2A2009D6C86 /* Assets.xcassets */; };
 		8BCE73822282B2A2009D6C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE73802282B2A2009D6C86 /* LaunchScreen.storyboard */; };
 		8BCE738D2282B2A3009D6C86 /* FindSpyGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE738C2282B2A3009D6C86 /* FindSpyGameTests.swift */; };
 		8BCE73982282B2A3009D6C86 /* FindSpyGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCE73972282B2A3009D6C86 /* FindSpyGameUITests.swift */; };
@@ -57,11 +59,13 @@
 		8B21C9EA22890D910046F639 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		8B21C9EC228911560046F639 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8B25CE01229C75450032C57F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8B25CE03229C9E300032C57F /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		8B25CE07229CF8240032C57F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8B25CE09229D36650032C57F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		8BCE73742282B29E009D6C86 /* FindSpyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindSpyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCE73772282B29E009D6C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BCE73792282B29E009D6C86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BCE737C2282B29E009D6C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8BCE737E2282B2A2009D6C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BCE73812282B2A2009D6C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BCE73832282B2A2009D6C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCE73882282B2A3009D6C86 /* FindSpyGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindSpyGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,9 +171,10 @@
 				8BCE73AC2282DD86009D6C86 /* controllers */,
 				8BCE73A52282D821009D6C86 /* models */,
 				8BCE73772282B29E009D6C86 /* AppDelegate.swift */,
+				8B25CE09229D36650032C57F /* Assets.xcassets */,
 				8BCE737B2282B29E009D6C86 /* Main.storyboard */,
-				8BCE737E2282B2A2009D6C86 /* Assets.xcassets */,
 				8BCE73802282B2A2009D6C86 /* LaunchScreen.storyboard */,
+				8B25CE07229CF8240032C57F /* GoogleService-Info.plist */,
 				8BCE73832282B2A2009D6C86 /* Info.plist */,
 			);
 			path = FindSpyGame;
@@ -212,6 +217,7 @@
 				8BCE73AF22831DF3009D6C86 /* TimerViewController.swift */,
 				8B21C9E62288C4210046F639 /* StartViewController.swift */,
 				8B25CE01229C75450032C57F /* MainViewController.swift */,
+				8B25CE03229C9E300032C57F /* GameTableViewCell.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -326,8 +332,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BCE73822282B2A2009D6C86 /* LaunchScreen.storyboard in Resources */,
-				8BCE737F2282B2A2009D6C86 /* Assets.xcassets in Resources */,
 				8BCE737D2282B29E009D6C86 /* Main.storyboard in Resources */,
+				8B25CE0A229D36650032C57F /* Assets.xcassets in Resources */,
+				8B25CE08229CF8240032C57F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,16 +409,22 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FindSpyGame/Pods-FindSpyGame-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -480,6 +493,7 @@
 				8BCE73782282B29E009D6C86 /* AppDelegate.swift in Sources */,
 				8B21C9EB22890D910046F639 /* LocationService.swift in Sources */,
 				8BCE73A92282D8FB009D6C86 /* GameGenerator.swift in Sources */,
+				8B25CE04229C9E300032C57F /* GameTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +669,7 @@
 			baseConfigurationReference = 7F22EACFEADADC9DB1B1B6CC /* Pods-FindSpyGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LR2C7293VN;
 				INFOPLIST_FILE = FindSpyGame/Info.plist;
@@ -664,6 +679,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KBTU.FindSpyGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -674,6 +690,7 @@
 			baseConfigurationReference = 73303ADDCBD4F3C3BAA20304 /* Pods-FindSpyGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LR2C7293VN;
 				INFOPLIST_FILE = FindSpyGame/Info.plist;
@@ -683,6 +700,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KBTU.FindSpyGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

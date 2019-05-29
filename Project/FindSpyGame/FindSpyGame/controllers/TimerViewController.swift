@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class TimerViewController: UIViewController {
     
@@ -38,7 +40,15 @@ class TimerViewController: UIViewController {
         return btn
     }()
     
-    var game: Game? = nil
+    let menuBtn: UIButton = {
+        let btn = UIButton()
+        btn.backgroundColor = UIColor.white
+        btn.layer.cornerRadius = 20
+        btn.setTitle("Вернуться в меню", for:  .normal)
+        btn.setTitleColor(UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0), for: .normal)
+        return btn
+    }()
+    
     var timer: Timer? = nil
     var seconds = 300
     
@@ -48,13 +58,15 @@ class TimerViewController: UIViewController {
         setupView()
         runTimer()
         finishButton.addTarget(self, action: #selector(didTapFinishBtn), for: .touchUpInside)
-        
+        menuBtn.addTarget(self, action: #selector(startMainViewController), for: .touchUpInside)
+        menuBtn.isHidden = true
     }
     
     func setupView() {
         self.view.addSubview(infoLabel)
         self.view.addSubview(timerLabel)
         self.view.addSubview(finishButton)
+        self.view.addSubview(menuBtn)
         
         infoLabel.snp.makeConstraints {
             $0.height.equalTo(206)
@@ -71,6 +83,12 @@ class TimerViewController: UIViewController {
         }
         
         finishButton.snp.makeConstraints {
+            $0.width.equalTo(272)
+            $0.height.equalTo(51)
+            $0.top.equalTo(timerLabel.snp.bottom).offset(20)
+            $0.centerX.equalToSuperview()
+        }
+        menuBtn.snp.makeConstraints {
             $0.width.equalTo(272)
             $0.height.equalTo(51)
             $0.top.equalTo(timerLabel.snp.bottom).offset(20)
@@ -100,20 +118,32 @@ class TimerViewController: UIViewController {
         timer?.invalidate()
         seconds = 360
         print("aaa")
-        let alert = UIAlertController(title: "Игра окончена🙅‍♂️", message: "Локация была: " + game!.location + " Шпион: " + String(game!.spyNumber), preferredStyle: UIAlertController.Style.alert)
-        
-        let okAction = UIAlertAction(title: "Ещё раз", style: UIAlertAction.Style.cancel) {
-            UIAlertAction in
-            self.startMainViewController()
-            
+        let location = UserDefaults.standard.string(forKey: "location")
+        let gameId = UserDefaults.standard.string(forKey: "gameId")
+        let URL = "http://192.168.43.48:8080/finish_game/"
+        Alamofire.request(URL, method: .get, parameters: ["gameId": gameId!])
+            .responseJSON { response in
+                print(response.request)
+                print(response.response)
+                print(response.result)
+                if let value = response.result.value {
+                    print("Did receive JSON data: \(value)")
+                    if location! == "Spy" {
+                        self.view.backgroundColor = .red
+                    } else {
+                        self.view.backgroundColor = .green
+                    }
+                }
+                else {
+                    print("JSON data is nil.")
+                }
+                self.finishButton.isHidden = true
+                self.menuBtn.isHidden = false
         }
-        alert.addAction(okAction)
-        
-        self.present(alert, animated: true, completion: nil)
     }
     
-    func startMainViewController(){
-        let startViewController = StartViewController()
+ @objc func startMainViewController(_ sender: UIButton){
+        let startViewController = MainViewController()
         self.present(startViewController, animated: true, completion: nil)
     }
 }

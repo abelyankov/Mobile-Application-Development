@@ -8,12 +8,12 @@
 
 import Foundation
 
-class GameGenerator{
-    static func generateGame(_ numberOfPlayers: Int) -> Game{
-        let locations = LocationGenerator.getLocations()
-        let location = locations[Int.random(in: 0..<locations.count)]
-        let spyNumber = Int.random(in: 1..<numberOfPlayers)
-        return Game(location, spyNumber, numberOfPlayers)
-    }
-}
+//class GameGenerator{
+//    static func generateGame(_ numberOfPlayers: Int) -> Game{
+//        let locations = LocationGenerator.getLocations()
+//        let location = locations[Int.random(in: 0..<locations.count)]
+//        let spyNumber = Int.random(in: 1..<numberOfPlayers)
+////        return Game(location, spyNumber, numberOfPlayers)
+//    }
+//}
 

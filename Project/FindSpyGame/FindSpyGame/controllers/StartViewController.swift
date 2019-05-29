@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class StartViewController: UIViewController {
     
@@ -70,6 +72,7 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         view.backgroundColor = UIColor(red: 1/255, green: 31/255, blue: 69/255, alpha: 1.0)
         submitButton.addTarget(self, action: #selector(didTapStartBtn), for: .touchUpInside)
         setUpView()
@@ -81,9 +84,33 @@ class StartViewController: UIViewController {
             let numberOfPlayers = Int(numberOfPlayersTextField.text!) ?? 0
             print(numberOfPlayers)
             if(numberOfPlayers >= 4){
-                let locationViewController = LocationViewController()
-                locationViewController.game = GameGenerator.generateGame(Int(numberOfPlayersTextField.text!) ?? 0)
-                self.present(locationViewController, animated: true, completion: nil)
+                let URL = "http://192.168.43.48:8080/create_game/"
+                let user = UserDefaults.standard.string(forKey: "user_id")
+                Alamofire.request(URL, method: .get, parameters: ["playerId": user!, "totalNumberOfPlayers": numberOfPlayers])
+                    .responseJSON { response in
+                        print(response.request)
+                        print(response.response)
+                        print(response.result)
+                        if let value = response.result.value {
+                            print("Did receive JSON data: \(value)")
+                            var location = JSON(value)["location"].stringValue
+                            var gameId = JSON(value)["gameId"].intValue
+                            UserDefaults.standard.set(location, forKey: "location")
+                            UserDefaults.standard.set(gameId, forKey: "gameId")
+                            let locations = UserDefaults.standard.string(forKey: "location")
+                            let gameIds = UserDefaults.standard.string(forKey: "gameId")
+                            print("AAAA Location")
+                            print(locations!)
+                            print(gameIds!)
+                            let locationViewController = LocationViewController()
+                            self.present(locationViewController, animated: true, completion: nil)
+                        }
+                        else {
+                            print("JSON data is nil.")
+                        }
+                }
+                
+                
             }
             else{
                 let alert = UIAlertController(title: "УПС ⚠️", message: "Минимальное количество игроков 4",  preferredStyle: UIAlertController.Style.alert)
